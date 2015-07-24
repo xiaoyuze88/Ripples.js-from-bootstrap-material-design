@@ -48,11 +48,11 @@
 
         //****************************//
         // These part only need to be done once when initilizing
-        // Put it out of the callback
+        // Take it out of the callback
         // By Xiao Yuze
 
-        // Check whether the container element's position is static or not, if it's 'static', set it to 'relative',
-        // because "ripple-wrapper"'s position is 'absolute', make it's offsetParent to be his parent element except the root element.
+        // Check whether the container element's position is 'static' or not, if it's 'static', set it to 'relative',
+        // because ".ripple-wrapper"'s position is 'absolute', make it's offsetParent to be his parent element except the root element.
         // Add by Xiao Yuze
         if (getComputedStyle($element[0]).getPropertyValue('position') === 'static') {
             $element.css({
@@ -73,7 +73,9 @@
         $element.on("mousedown touchstart", function(event) {
 
             // Prevent inner ripples trigger the outter one
+            // By Xiao Yuze
             event.stopPropagation();
+
             /**
              * Verify if the user is just touching on a device and return if so
              */
@@ -257,7 +259,6 @@
         // Add by Xiao Yuze
         return "ontouchstart" in window && (/android|webos|ip(hone|ad|od)|opera (mini|mobi|tablet)|iemobile|windows.+(phone|touch)|mobile|fennec|kindle (Fire)|Silk|maemo|blackberry|playbook|bb10\; (touch|kbd)|Symbian(OS)|Ubuntu Touch/i.test(navigator.userAgent));
     };
-
 
     /**
      * End the animation of the ripple
