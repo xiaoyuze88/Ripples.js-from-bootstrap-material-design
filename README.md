@@ -1,4 +1,5 @@
-#Ripples.js--from [bootstrap-material-design](https://github.com/FezVrasta/bootstrap-material-design)
+#Ripples.js
+### From [bootstrap-material-design](https://github.com/FezVrasta/bootstrap-material-design)
 
 This is a module from FezVrasta's awesome project "bootstrap-material-design", I love it so much, but he doesn't take it out as one whole project and there isn't so much document for it.
 
