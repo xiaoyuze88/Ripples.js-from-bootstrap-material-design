@@ -6,7 +6,7 @@
     <title>ripples demo</title>
     <link rel="stylesheet" href="ripples.css">
     <style>
-    .container {
+    .button {
         width: 400px;
         height: 100px;
         background-color: gray;
@@ -16,21 +16,30 @@
         height: 50px;
         background-color: red;
     }
+    .button2 {
+        background-color: yellow;
+    }
 
     </style>
 </head>
 
 <body>
     <h1>This is a simple demo for ripples.js</h1>
-    <div class="container">
-        
-        <div class="container inner"></div>
 
+    <h3>Nested buttons(With custom red color)</h3>
+    <div class="button" data-ripple-color="red">
+        Outter button
+        <div class="button inner">Innter button</div>
+    </div>
+
+    <h3>Single button</h3>
+    <div class="button button2">
+        Single button
     </div>
     <script src="jquery-1.10.2.min.js"></script>
     <script src="ripples.js"></script>
     <script>
-    $('.container').ripples();
+    $('.button').ripples();
     </script>
 </body>
 
