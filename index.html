@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ripples demo</title>
+    <link rel="stylesheet" href="ripples.css">
+    <style>
+    .container {
+        width: 400px;
+        height: 100px;
+        background-color: gray;
+    }
+    .inner {
+        width: 200px;
+        height: 50px;
+        background-color: red;
+    }
+
+    </style>
+</head>
+
+<body>
+    <h1>This is a simple demo for ripples.js</h1>
+    <div class="container">
+        
+        <div class="container inner"></div>
+
+    </div>
+    <script src="jquery-1.10.2.min.js"></script>
+    <script src="ripples.js"></script>
+    <script>
+    $('.container').ripples();
+    </script>
+</body>
+
+</html>
